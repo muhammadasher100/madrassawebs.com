@@ -1,0 +1,132 @@
+@use '../custom' as *;
+.facilities {
+	@include media-breakpoint-up(lg) {
+		margin-top: 11rem;
+	}
+	@include media-breakpoint-only(md) {
+		margin-top: 10rem;
+	}
+	@include media-breakpoint-down(sm) {
+		margin-top: 8rem;
+	}
+	h1 {
+    @include media-breakpoint-up(lg) {
+			text-align: right;
+      font-family: 'Noto Nastaliq Urdu', serif;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      filter: drop-shadow(0.20em 0.30em 0.2em);
+		}
+		 @include media-breakpoint-only(md) {
+			text-align: right;
+      font-family: 'Noto Nastaliq Urdu', serif;
+      font-weight: 600;
+      filter: drop-shadow(0.20em 0.30em 0.2em);
+      margin-bottom: 2rem;
+
+		}
+		 @include media-breakpoint-down(sm) {
+			text-align: right;
+      font-family: 'Noto Nastaliq Urdu', serif;
+      font-weight: 600;
+      filter: drop-shadow(0.20em 0.30em 0.2em);
+      margin-bottom: 2rem;
+
+		}
+	}
+	h2 {
+		@include media-breakpoint-up(lg) {
+			text-align: right;
+      font-family: 'Noto Nastaliq Urdu', serif;
+      font-weight: 200;
+      font-size: 1.5rem;
+      margin-right: 5rem;
+      margin-bottom: 2rem;
+      color: red;
+		}
+		@include media-breakpoint-only(md) {
+			text-align: right;
+      font-family: 'Noto Nastaliq Urdu', serif;
+      font-weight: 200;
+      font-size: 1.3rem;
+      margin-right: 4rem;
+      margin-bottom: 1.5rem;
+      line-height: 2.7rem;
+      color: red;
+		}
+		@include media-breakpoint-down(sm) {
+			text-align: right;
+      font-family: 'Noto Nastaliq Urdu', serif;
+      font-weight: 200;
+      font-size: 1rem;
+      margin-right: 2rem;
+      margin-bottom: 1.5rem;
+      line-height: 2rem;
+      color: red;
+		}
+	}
+	.pics {
+		@include media-breakpoint-up(lg) {
+      margin-top: 5rem;
+		}
+		@include media-breakpoint-only(md) {
+			
+		}
+		@include media-breakpoint-down(sm) {
+			
+		}
+		.image-1 {
+     text-align: right;
+     filter: drop-shadow(0.50em 0.60em 0.3em);
+        @include media-breakpoint-only(md) {
+     	margin-top: 1rem;
+     }
+		h1{
+			margin-top: 2rem;
+			 @include media-breakpoint-down(sm) {
+     	text-align: left;
+     	margin-left: 2rem;
+     	margin-top: -3rem;
+     	margin-bottom: 2.5rem;
+      }
+
+		}
+		}
+		.image-2 {
+     text-align: right;
+     margin-top: -2rem;
+     filter: drop-shadow(0.50em 0.60em 0.3em);
+     @include media-breakpoint-only(md) {
+     	margin-top: -1rem;
+     }
+		h1 {
+     margin-right: 3rem;
+      @include media-breakpoint-only(md) {
+     	margin-top: 1rem;
+     }
+     @include media-breakpoint-down(sm) {
+     	text-align: left;
+     	margin-top: -5rem;
+      margin-left: 2rem;
+      }
+		}
+		}
+		.image-3 {
+     text-align: right;
+     filter: drop-shadow(0.50em 0.60em 0.3em);
+     @include media-breakpoint-only(md) {
+     	margin-top: 1rem;
+     }
+		h1 {
+      margin-top: 2rem;
+      margin-right: 2rem;
+       @include media-breakpoint-down(sm) {
+     	text-align: left;
+     	margin-top: -5rem;
+     	margin-left: 4rem;
+     	font-size: 2rem;
+      }
+		}
+		}
+	}
+}

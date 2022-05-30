@@ -1,0 +1,37 @@
+@use '../custom' as *;
+
+.contact{
+	margin-top: 11rem;
+	h1 {
+     text-align: center;
+     margin-bottom: 1rem;
+     font-weight: 900;
+     font-size: 3rem;
+     @include media-breakpoint-only(md) {
+     	margin-top: -2rem;
+     }
+     @include media-breakpoint-down(sm) {
+     	margin-top: -3rem;
+     }
+	}
+	.map {
+    iframe {
+    	@include media-breakpoint-up(lg) {
+    		width: 70rem;
+    		height: 25rem;
+    		border-radius: 1rem;
+    	}
+    	@include media-breakpoint-only(md) {
+    		margin-left: 1.5rem;
+    		width: 40rem;
+    		border-radius: 1rem;
+    	}
+    	@include media-breakpoint-down(sm) {
+    	margin-left: 0.3rem; 
+      width: 19rem;
+      height: 17rem; 
+      border-radius: 0.5rem;
+    }
+    }
+	}
+}

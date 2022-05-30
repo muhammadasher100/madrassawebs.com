@@ -1,0 +1,82 @@
+@use '../custom' as *;
+
+.accordion-button {
+  	h6 {
+      @include media-breakpoint-up(lg) {
+	     margin-left: 27rem;
+	     text-align: right;	
+	     margin-top: 1rem;
+  	   font-family: 'Noto Nastaliq Urdu', serif;
+
+
+      }
+       @include media-breakpoint-only(md) {
+	    text-align: right;
+	    margin-left: 2rem;
+  	  font-family: 'Noto Nastaliq Urdu', serif;
+	    }
+
+	    @include media-breakpoint-down(sm) {
+	    	text-align: right;
+  	    font-family: 'Noto Nastaliq Urdu', serif;
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        margin-right: 0.5rem;
+	    } 
+
+		
+  }
+  h5 {
+      @include media-breakpoint-up(lg) {
+	     margin-left: 26rem;
+	     text-align: right;	
+	     margin-top: 1rem;
+  	   font-family: 'Noto Nastaliq Urdu', serif;
+       font-size: 1.1rem;
+
+      }
+       @include media-breakpoint-only(md) {
+	    text-align: right;
+  	  font-family: 'Noto Nastaliq Urdu', serif;
+  	  font-size: 1rem;
+  	  margin-left: 4.5rem;
+	    }
+	   
+	    @include media-breakpoint-down(sm) {
+	    	text-align: right;
+  	    font-family: 'Noto Nastaliq Urdu', serif;
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        margin-right: 0.5rem;
+	    } 
+    }
+     h4 {
+      @include media-breakpoint-up(lg) {
+	     margin-left: 14rem;
+	     text-align: right;	
+	     margin-top: 1rem;
+  	   font-family: 'Noto Nastaliq Urdu', serif;
+  	   font-size: 1.1rem;
+
+
+      }
+       @include media-breakpoint-only(md) {
+	    text-align: right;
+  	  font-family: 'Noto Nastaliq Urdu', serif;
+  	  font-size: 1rem;
+      margin-right: 0.5rem;
+      line-height: 2rem;  
+	    }
+	   
+	    @include media-breakpoint-down(sm) {
+	    	text-align: right;
+  	    font-family: 'Noto Nastaliq Urdu', serif;
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        margin-right: 0.5rem;
+	    } 
+    }
+
+
+		
+}
